@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Product Name] — The Rapid SPA Platform</title>
+  <meta name="description" content="Build complete Single Page Applications without writing code. Configure, assemble and deploy enterprise-grade SPAs with JSON schemas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep slate */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#0ea5a4; /* teal */
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      color-scheme: dark;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071024 0%, #07182b 60%);color:#e6eef6}
+    .container{max-width:1120px;margin:0 auto;padding:36px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#021018;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;margin-top:40px}
+    h1{font-size:36px;margin:0 0 12px 0;line-height:1.02}
+    p.lead{color:var(--muted);margin:0 0 20px 0;font-size:16px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#022;padding:12px 16px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--muted)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .feature-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+    .feature{background:var(--glass);padding:14px;border-radius:10px}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .section{margin-top:56px}
+    .muted{color:var(--muted)}
+    .prices{display:flex;gap:14px;align-items:stretch}
+    .price{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;flex:1}
+    footer{margin-top:60px;padding:24px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+    pre{background:#071426;padding:14px;border-radius:8px;overflow:auto;color:#d6f8f7}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .feature-list{grid-template-columns:repeat(2,1fr)}
+      .how{grid-template-columns:1fr}
+      .prices{flex-direction:column}
+    }
+    @media (max-width:560px){
+      h1{font-size:26px}
+      .logo-mark{width:38px;height:38px}
+      nav a{margin-left:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-mark">SP</div>
+        <div style="line-height:1">
+          <div style="font-weight:700">[Product Name]</div>
+          <div class="muted" style="font-size:12px">Rapid SPA platform — schema-driven</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#usecases">Use cases</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn" style="padding:8px 12px">Book a demo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Build production-grade SPAs in hours — without writing code</h1>
+          <p class="lead">A developer-first, configuration-driven platform that ships a full Single Page Application out of the box and lets you extend it by modifying JSON schemas. Fast, governed, and scalable.</p>
+
+          <div class="cta">
+            <button class="btn">Start free trial</button>
+            <button class="btn ghost">Watch 10-min demo</button>
+          </div>
+
+          <div class="section">
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Out of the box</div>
+                  <div class="muted">Users, roles, admin, dashboards, RBAC/ABAC</div>
+                </div>
+                <div style="font-weight:700;color:var(--accent)">Ready now</div>
+              </div>
+              <div class="feature-list">
+                <div class="feature">Auto CRUD & forms</div>
+                <div class="feature">Schema-driven pages</div>
+                <div class="feature">Workflows & rules engine</div>
+                <div class="feature">Dashboards & charts</div>
+                <div class="feature">Per-field permissions</div>
+                <div class="feature">Git-friendly config</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin:0 0 8px 0">Live demo</h3>
+            <div class="muted" style="font-size:13px;margin-bottom:12px">See a full app created from JSON schemas in under 10 minutes.</div>
+            <div style="height:180px;background:linear-gradient(180deg,#021226,#04122a);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)">[Video / GIF]</div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn" style="flex:1">Request demo</button>
+            </div>
+          </div>
+
+          <div style="height:18px"></div>
+
+          <div class="card">
+            <div style="font-weight:700">Try in your stack</div>
+            <div class="muted" style="font-size:13px">Cloud, on-prem or hybrid — Docker & Kubernetes friendly.</div>
+            <div style="margin-top:10px;font-size:13px">Integrates with SSO, enterprise IAM, and your existing APIs.</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features" class="section">
+        <h2>Platform highlights</h2>
+        <p class="muted">Everything you need to build and govern SPAs at scale.</p>
+        <div class="how">
+          <div class="card">
+            <h4 style="margin-top:0">Full base application</h4>
+            <p class="muted">Start from a production-ready SPA: user management, admin console, document modules, dashboards and more.</p>
+          </div>
+          <div class="card">
+            <h4 style="margin-top:0">Schema-driven extensibility</h4>
+            <p class="muted">Add collections, pages and workflows by writing JSON schema files. Changes apply at runtime.</p>
+          </div>
+          <div class="card">
+            <h4 style="margin-top:0">Enterprise governance</h4>
+            <p class="muted">Native RBAC & ABAC, per-field visibility, audit trails and deployable in secure environments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <h2>How it works</h2>
+        <p class="muted">A simple three-step process that keeps teams in control.</p>
+        <div class="how">
+          <div class="card">
+            <h4>1 — Define schema</h4>
+            <p class="muted">Model entities, pages, permissions and workflows as JSON files stored in Git.</p>
+          </div>
+          <div class="card">
+            <h4>2 — Platform engine</h4>
+            <p class="muted">A runtime interpreter auto-generates the UI, logic and API interactions from schemas.</p>
+          </div>
+          <div class="card">
+            <h4>3 — Instant SPA</h4>
+            <p class="muted">The SPA updates immediately — no code, no rebuild, no downtime.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <h4 style="margin:0 0 8px 0">Example schema (excerpt)</h4>
+          <pre>{
+  "collection": "clients",
+  "fields": [
+    {"name":"firstName","type":"string"},
+    {"name":"lastName","type":"string"},
+    {"name":"email","type":"string","validators":["email"]}
+  ],
+  "permissions": {
+    "list": "role:admin or role:manager",
+    "edit": "role:admin"
+  }
+}</pre>
+        </div>
+      </section>
+
+      <section id="usecases" class="section">
+        <h2>Who uses it</h2>
+        <p class="muted">Enterprise teams & ESNs who need consistent, secure, and fast frontend delivery.</p>
+        <div class="how">
+          <div class="card"><strong>Internal Admins</strong><div class="muted">Admin consoles and operations dashboards.</div></div>
+          <div class="card"><strong>Digital Factories</strong><div class="muted">Standardized templates for rapid project delivery.</div></div>
+          <div class="card"><strong>Regulated Industries</strong><div class="muted">Medical, legal, and finance apps with strict governance needs.</div></div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <h2>Pricing</h2>
+        <p class="muted">Simple tiers that scale with usage and needs.</p>
+        <div class="prices">
+          <div class="price card">
+            <h3>Startup</h3>
+            <div class="muted">€8k / year</div>
+            <ul class="muted">
+              <li>Base platform</li>
+              <li>Email support</li>
+              <li>Community templates</li>
+            </ul>
+            <div style="margin-top:12px"><button class="btn">Start trial</button></div>
+          </div>
+
+          <div class="price card">
+            <h3>Business</h3>
+            <div class="muted">€20k / year</div>
+            <ul class="muted">
+              <li>Priority support</li>
+              <li>Onboarding sessions</li>
+              <li>Integration connectors</li>
+            </ul>
+            <div style="margin-top:12px"><button class="btn">Contact sales</button></div>
+          </div>
+
+          <div class="price card">
+            <h3>Enterprise</h3>
+            <div class="muted">Custom</div>
+            <ul class="muted">
+              <li>SLAs & on-premise</li>
+              <li>White-label</li>
+              <li>Dedicated success</li>
+            </ul>
+            <div style="margin-top:12px"><button class="btn">Request demo</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Get started</h2>
+        <p class="muted">Book a live demo or request a tailored pilot to validate the platform with your real use case.</p>
+        <div class="card" style="display:flex;gap:12px;align-items:center">
+          <input type="email" placeholder="Your business email" style="flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <button class="btn">Book demo</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <div style="font-weight:700">[Product Name]</div>
+          <div class="muted" style="font-size:13px">Schema-driven SPA platform for professional developers & enterprises</div>
+        </div>
+        <div class="muted">© " + new Date().getFullYear() + " [Product Name]. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
